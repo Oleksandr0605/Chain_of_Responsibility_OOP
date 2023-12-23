@@ -13,7 +13,7 @@ public class Tray {
         return next;
     }
 
-    public void process(int amount){
+    public void process(int amount) {
         System.out.println(amount / denomination + " x " + denomination);
         if (next != null) {
             next.process(amount % denomination);
