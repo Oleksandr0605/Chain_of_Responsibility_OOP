@@ -68,9 +68,6 @@
         <!-- http://checkstyle.sourceforge.net/config_design.html                        -->
         <!-- =========================================================================== -->
         <!-- SPECIAL HACK FOR NON-STATIC PUBIC FINAL VARIABLE -->
-        <module name="VisibilityModifier">
-            <property name="publicMemberPattern" value="^SLOPE_ORDER$"/>
-        </module>
         <!-- <module name="FinalClass"/> -->
         <module name="InterfaceIsType"/>
         <module name="MutableException"/>
@@ -85,17 +82,8 @@
         <!--    <module name="DoubleCheckedLocking"/>  NO LONGER AVAILABLE IN CHECKSTYLE 5.6 -->
         <module name="EmptyStatement"/>
         <!--        <module name="EqualsHashCode"/> -->
-        <module name="HiddenField">
-            <property name="ignoreConstructorParameter" value="true"/>
-        </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber">
-            <property name="tokens"
-                      value="NUM_DOUBLE, NUM_FLOAT, NUM_INT, NUM_LONG"/>
-            <property name="ignoreNumbers" value="-1, 0, 0.5, 1, 2"/>
-            <property name="ignoreHashCodeMethod" value="true"/>
-        </module>
         <module name="MissingSwitchDefault"/>
         <module name="ModifiedControlVariable"/>
         <module name="SimplifyBooleanExpression"/>
@@ -124,7 +112,6 @@
                       value="java.lang.Boolean, java.lang.Integer, java.lang.Double, java.lang.Float, java.lang.Character, java.lang.Long, java.lang.Short, java.lang.Byte, java.lang.Class"/>
         </module>
 
-        <module name="DeclarationOrder"/>
         <module name="ParameterAssignment"/>
         <module name="DefaultComesLast"/>
         <module name="FallThrough">
